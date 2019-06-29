@@ -6,7 +6,7 @@ let del = document.getElementById('delete')
 let i=1
 function add_value(){
     input_val=input.value
-    if(input_val!==null){
+    if(input_val!==""){
     console.log(input_val)
     let item = document.createElement('li');
     item.innerHTML = input_val;
