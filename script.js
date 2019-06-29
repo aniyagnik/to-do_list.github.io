@@ -6,6 +6,7 @@ let del = document.getElementById('delete')
 let i=1
 function add_value(){
     input_val=input.value
+    if(input_val!==null){
     console.log(input_val)
     let item = document.createElement('li');
     item.innerHTML = input_val;
@@ -14,6 +15,10 @@ function add_value(){
     i++
     list.appendChild(item)
     input.value=""
+    }
+    else{
+       console.log("empty input box")
+    }
 }
 function strike(k){
     let attr="nothing"
